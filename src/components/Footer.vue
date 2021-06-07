@@ -89,6 +89,7 @@ export default {
             position: absolute;
             top: 50%;
             right: 0;
+            padding: 25px;
         }
     }
     footer > div:last-child {

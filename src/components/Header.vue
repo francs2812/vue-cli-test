@@ -78,11 +78,11 @@ export default {
 <style lang="scss" scoped>
     nav {
         width: 100%;
-        height: 15vh;
+        height: 10vh;
         display: flex;
         align-content: center;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;;
         text-transform: uppercase;
         font-size: 10px;
 

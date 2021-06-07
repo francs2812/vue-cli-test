@@ -45,11 +45,11 @@ export default {
         margin-top: 0;
 
         div {
-            height: 70%;
+            height: 85%;
             background-color: black;
         }
         div:last-child {
-            height: 30%;
+            height: 15%;
             background-color: blue;
             display: flex;
             justify-content: center;
