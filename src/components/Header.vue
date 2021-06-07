@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
     nav {
         width: 100%;
-        height: 100px;
+        height: 15vh;
         display: flex;
         align-content: center;
         align-items: center;

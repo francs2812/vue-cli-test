@@ -40,16 +40,16 @@ export default {
 
 <style lang="scss" scoped>
     main {
-        height: 300px;
+        height: 70vh;
         color: white;
         margin-top: 0;
 
         div {
-            height: 50%;
+            height: 70%;
             background-color: black;
         }
         div:last-child {
-            height: 50%;
+            height: 30%;
             background-color: blue;
             display: flex;
             justify-content: center;
@@ -61,6 +61,7 @@ export default {
                 width: 70%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 li {
                     height: 50%;
