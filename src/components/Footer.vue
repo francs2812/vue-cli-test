@@ -73,7 +73,6 @@ export default {
         color:gray;
     }
     span {
-        height: 300px;
         overflow: hidden;
         position: relative;
         ul {
@@ -102,11 +101,7 @@ export default {
 
             h1 {
                 display: inline-block;
-                font-size: 13px;
-                padding: 10px;
-                text-transform: uppercase;
-                border: 1px solid $colorBrand;
-                color: white;
+                @include botton;
             }
             img {
                 height: 25px;

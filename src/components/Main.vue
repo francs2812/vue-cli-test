@@ -1,8 +1,8 @@
 <template>
   <main>
-      <div id="prov">
+      <div id="shop">
           <div id="titans"></div>
-          <div id="prova">
+          <div id="element">
               <h1>current series</h1>
               <div id="comics">
                   <Comics />
@@ -62,7 +62,7 @@ export default {
         color: white;
         margin-top: 0;
 
-        #prov {
+        #shop {
             height: 85%;
 
             #titans {
@@ -70,8 +70,7 @@ export default {
                 background-image: url(../assets/img/jumbotron.jpg);
                 background-size: cover;
             }
-            #prova {
-                height: 500px;
+            #element {
                 position: relative;
                 //background-color: black;
                 h1 {
@@ -93,7 +92,7 @@ export default {
             }
         }
         nav {
-            height: 15%;
+            height: 80px;
             background-color: $colorBrand;
             display: flex;
             justify-content: center;
@@ -108,7 +107,7 @@ export default {
                 align-items: center;
 
                 li {
-                    height: 50%;
+                    height: 100%;
                     font-size: 10px;
                     padding: 10px;
                     list-style: none;

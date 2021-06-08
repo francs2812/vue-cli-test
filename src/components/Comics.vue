@@ -1,12 +1,14 @@
 <template>
    <div>
        <ul>
-           <!-- <li v-for="(fumetto, index )in fumetti" :key="index"></li> -->
            <li v-for="(fumetto, index) in fumetti" :key="index">
                <img :src="fumetti[index].thumb" alt="">
-               <p> {{fumetti[index].series}} </p>
+               <h3> {{fumetti[index].series}} </h3>
            </li>
        </ul>
+       <p>loand mode</p>
+
+
    </div>
 </template>
 
@@ -98,24 +100,25 @@ export default {
 <style lang="scss" scoped>
 @import "./style/general";
 div {
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
 }
     ul {
         width: 70%;
         li{
             width: calc(100% / 6);
-            @include heightWidth(width);
             padding: 10px;
             float: left;
             list-style: none;
-            
+
             img {
                 width: 100%;
                 height: 100%;
             }
-            p {
+            h3 {
                 font-size: 10px;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -123,4 +126,10 @@ div {
             }
         }
     }
+    p {
+        display: inline-block;
+        @include botton;
+        background-color: $colorBrand;
+    }
+    
 </style>>
