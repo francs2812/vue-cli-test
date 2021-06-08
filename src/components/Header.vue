@@ -99,7 +99,7 @@ export default {
             list-style: none;
 
             &:hover {
-                cursor: auto
+                cursor: pointer;
             }
         }
     }

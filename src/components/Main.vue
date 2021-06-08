@@ -113,6 +113,7 @@ export default {
                     list-style: none;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     
 
                     img {

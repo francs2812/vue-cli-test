@@ -106,6 +106,7 @@ export default {
             img {
                 height: 25px;
                 margin: 0 10px;
+                cursor:pointer;
             }
 
             h3 {
