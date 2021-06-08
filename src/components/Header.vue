@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
     nav {
         width: 100%;
-        height: 10vh;
+        height: 8vh;
         display: flex;
         align-content: center;
         align-items: center;
@@ -87,7 +87,7 @@ export default {
         font-size: 10px;
 
         img {
-            height: 100%;
+            height: 85%;
         }
     }
     ul {
@@ -97,11 +97,14 @@ export default {
         li {
             padding: 10px;
             list-style: none;
+
+            &:hover {
+                cursor: auto
+            }
         }
     }
 
     nav > a {
             height: 80%;
         }
-
 </style>

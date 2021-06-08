@@ -61,6 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "./style/general";
     footer {
         display: flex;
         flex-direction: column;
@@ -104,7 +105,7 @@ export default {
                 font-size: 13px;
                 padding: 10px;
                 text-transform: uppercase;
-                border: 1px solid blue;
+                border: 1px solid $colorBrand;
                 color: white;
             }
             img {
@@ -114,7 +115,7 @@ export default {
 
             h3 {
                 text-transform: uppercase;
-                color: blue;
+                color: $colorBrand;
                 float: left;
             }
     }

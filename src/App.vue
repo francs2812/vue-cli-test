@@ -26,5 +26,7 @@ export default {
       padding: 0;
       box-sizing: border-box;
   }
+
+  $blu : #0282f9;
   
 </style>

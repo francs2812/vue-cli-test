@@ -1,7 +1,16 @@
 <template>
   <main>
-      <div>contenuto</div>
-      <div>
+      <div id="prov">
+          <div id="titans"></div>
+          <div id="prova">
+              <h1>current series</h1>
+              <div id="comics">
+                  <Comics />
+              </div>
+          </div>
+          
+      </div>
+      <nav>
           <ul>
             <li>
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
@@ -28,29 +37,64 @@
             </li>
 
           </ul>
-      </div>
+      </nav>
   </main>
 </template>
 
 <script>
+import Comics from './Comics.vue'
+
+
 export default {
-    name: "Main"
+    name: 'Main',
+    components: {
+        Comics
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+    //$colorBrand : #0282f9;
+    @import "./style/general";
     main {
-        height: 70vh;
+        display: block;
+        //height: 70vh;
         color: white;
         margin-top: 0;
 
-        div {
+        #prov {
             height: 85%;
-            background-color: black;
+
+            #titans {
+                height: 50vh;
+                background-image: url(../assets/img/jumbotron.jpg);
+                background-size: cover;
+            }
+            #prova {
+                height: 500px;
+                position: relative;
+                //background-color: black;
+                h1 {
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    top: 0;
+                    left: 15%;
+                    font-size: 19px;
+                    padding: 10px;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: $colorBrand;
+                }
+                #comics {
+                    height: 100%;
+                    
+                }
+            }
         }
-        div:last-child {
+        nav {
             height: 15%;
-            background-color: blue;
+            background-color: $colorBrand;
             display: flex;
             justify-content: center;
             align-items: center;
